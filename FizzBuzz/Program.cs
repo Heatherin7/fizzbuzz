@@ -11,22 +11,19 @@ namespace FizzBuzz
         if (i % 3 == 0 && i % 5 == 0)
         {
           Console.WriteLine("FizzBuzz");
-          continue;
         }
-
-        if (i % 3 == 0)
+        else if (i % 3 == 0)
         {
           Console.WriteLine("Fizz");
-          continue;
         }
-
-        if (i % 5 == 0)
+        else if (i % 5 == 0)
         {
           Console.WriteLine("Buzz");
-          continue;
         }
-
-        Console.WriteLine(i);
+        else
+        {
+          Console.WriteLine(i);
+        }
       }
     }
   }
